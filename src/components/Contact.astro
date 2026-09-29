@@ -1,0 +1,75 @@
+---
+// Contact Component
+---
+<section id="contact" class="py-28 border-t border-slate-900 px-6 max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div>
+            <h2 class="text-xs font-semibold tracking-widest uppercase text-emerald-400 mb-3">Initiate Partnership</h2>
+            <p class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6">Let's build something remarkable.</p>
+            <p class="text-slate-400 mb-8 leading-relaxed">
+                Complete the project inquiry form to schedule an initial architecture and scoping consultation with our engineering and strategy team.
+            </p>
+            <div class="space-y-4 text-sm text-slate-300">
+                <div class="flex items-center gap-3">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span>Response guaranteed within 24 business hours</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span>Direct access to lead technical architects</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span>Strict NDA compliance upon request</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Inquiry Form -->
+        <div class="p-8 md:p-10 rounded-2xl bg-slate-900/50 border border-slate-800/85">
+            <form onsubmit="event.preventDefault(); alert('Thank you for your inquiry. A SebTech representative will reach out shortly.');" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-semibold tracking-wider uppercase text-slate-400 mb-2">Full Name</label>
+                        <input type="text" required placeholder="Jane Doe" class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-white placeholder-slate-600 text-sm focus:outline-none focus:border-emerald-500 transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold tracking-wider uppercase text-slate-400 mb-2">Corporate Email</label>
+                        <input type="email" required placeholder="jane@company.com" class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-white placeholder-slate-600 text-sm focus:outline-none focus:border-emerald-500 transition-colors">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold tracking-wider uppercase text-slate-400 mb-2">Primary Service Required</label>
+                    <select class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-emerald-500 transition-colors">
+                        <option>Full-Stack Software Engineering</option>
+                        <option>Brand Identity & UI/UX Design</option>
+                        <option>Cloud Architecture & DevOps</option>
+                        <option>Digital Marketing & Technical Growth</option>
+                        <option>Comprehensive End-to-End Partnership</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold tracking-wider uppercase text-slate-400 mb-2">Project Scope & Objectives</label>
+                    <textarea rows="4" required placeholder="Tell us about your project goals, timelines, and technical requirements..." class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-white placeholder-slate-600 text-sm focus:outline-none focus:border-emerald-500 transition-colors resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-4 rounded-lg bg-emerald-600 text-white font-medium hover:bg-emerald-500 transition-colors shadow-lg shadow-emerald-900/20">
+                    Submit Project Inquiry
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="mt-28 pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+        <p>&copy; 2026 sebtech.dev. All rights reserved.</p>
+        <div class="flex space-x-6 mt-4 sm:mt-0">
+            <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+            <a href="#" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+            <a href="#" class="hover:text-slate-300 transition-colors">GitHub</a>
+            <a href="#" class="hover:text-slate-300 transition-colors">LinkedIn</a>
+        </div>
+    </div>
+</section>
